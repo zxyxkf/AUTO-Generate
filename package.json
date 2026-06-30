@@ -1,0 +1,25 @@
+{
+  "name": "auto-generate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "concurrently \"npm run api\" \"npm run web\"",
+    "api": "node server/index.js",
+    "web": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "concurrently": "^10.0.3",
+    "express": "^5.2.1",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.35.2",
+    "vite": "^8.1.0"
+  }
+}
